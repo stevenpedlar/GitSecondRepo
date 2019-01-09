@@ -17,7 +17,7 @@ data2.jobs.each
 // here starts create the job
     job("$it.repositoryName") {
         description(' This is the Description of the job.')
-      listView(String JobsList, Closure closure = null)
+      listView('JobsList')
         logRotator(5, 100, -1, -1)
         parameters {
             stringParam('Name', 'DefaultValue', 'This is a first parameter')
