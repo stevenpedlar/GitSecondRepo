@@ -17,11 +17,7 @@ data2.jobs.each
 // here starts create the job
     job("$it.repositoryName") {
         description(' This is the Description of the job.')
-     listView('JobsList'){
-    //jobs {
-      regex("testrepo1")
- }
-//}
+  
         logRotator(5, 100, -1, -1)
         parameters {
             stringParam('Name', 'DefaultValue', 'This is a first parameter')
