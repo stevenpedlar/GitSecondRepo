@@ -13,14 +13,14 @@ def allSJObs = data2.jobs as Object
 data2.jobs.each
   {
     println("Create Job $it.repositoryName")
- listView('JobsList'){
+
 // here starts create the job
     job("$it.repositoryName") {
         description(' This is the Description of the job.')
-    //  listView('JobsList'){
+     listView('JobsList'){
     //jobs {
-      //  regex("testrepo*")
-   // }
+      regex("testrepo1")
+ }
 //}
         logRotator(5, 100, -1, -1)
         parameters {
@@ -46,5 +46,4 @@ data2.jobs.each
     }
 
     //////here ends create the job
-  }
   }
