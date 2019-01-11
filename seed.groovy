@@ -41,5 +41,5 @@ data2.jobs.each
       }
     }
 
-    /////////here ends create the job
+    //////////here ends create the job
   }
